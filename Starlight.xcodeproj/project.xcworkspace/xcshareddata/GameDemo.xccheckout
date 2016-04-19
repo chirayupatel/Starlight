@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A311578E-D56F-476E-ACC7-83B855B3E306</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GameDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E895DC8801E97CC1B9381B4B1D00404310B8D237</key>
+		<string>bitbucket.org:flybitsios/gamedemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E895DC8801E97CC1B9381B4B1D00404310B8D237</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:flybitsios/gamedemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E895DC8801E97CC1B9381B4B1D00404310B8D237</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E895DC8801E97CC1B9381B4B1D00404310B8D237</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GameDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

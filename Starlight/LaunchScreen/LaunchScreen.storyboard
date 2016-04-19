@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="MGA-lK-oNv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_2_planet.png" translatesAutoresizingMaskIntoConstraints="NO" id="nnu-x7-bMw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-VP-own">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_4.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Cm-Vx-Ptb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Cm-Vx-Ptb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="0jt-KS-6HN"/>
+                            <constraint firstAttribute="trailing" secondItem="nnu-x7-bMw" secondAttribute="trailing" id="5ln-Uy-08Q"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2Cm-Vx-Ptb" secondAttribute="bottom" id="CbQ-qZ-xnt"/>
+                            <constraint firstItem="nnu-x7-bMw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="D3o-eF-O9x"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="MGA-lK-oNv" secondAttribute="bottom" id="G82-RN-our"/>
+                            <constraint firstItem="nnu-x7-bMw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Hcf-e7-gMR"/>
+                            <constraint firstItem="c1S-VP-own" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Qr9-B3-L3x"/>
+                            <constraint firstItem="c1S-VP-own" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="TEA-cx-LGh"/>
+                            <constraint firstAttribute="trailing" secondItem="MGA-lK-oNv" secondAttribute="trailing" id="WP1-7V-wbN"/>
+                            <constraint firstItem="MGA-lK-oNv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ZHV-8B-xxa"/>
+                            <constraint firstAttribute="trailing" secondItem="2Cm-Vx-Ptb" secondAttribute="trailing" id="aE3-w2-77X"/>
+                            <constraint firstAttribute="trailing" secondItem="c1S-VP-own" secondAttribute="trailing" id="lJ6-c9-Mfx"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="c1S-VP-own" secondAttribute="bottom" id="mrm-Yy-KOs"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nnu-x7-bMw" secondAttribute="bottom" id="s8D-iH-FKL"/>
+                            <constraint firstItem="2Cm-Vx-Ptb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zlj-8q-de9"/>
+                            <constraint firstItem="MGA-lK-oNv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zwb-iR-3GU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_1.png" width="1137" height="641"/>
+        <image name="background_2_planet.png" width="1450" height="806"/>
+        <image name="background_3.png" width="1137" height="641"/>
+        <image name="background_4.png" width="1137" height="641"/>
+    </resources>
+</document>

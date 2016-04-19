@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E895DC8801E97CC1B9381B4B1D00404310B8D237+++7347C52",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E895DC8801E97CC1B9381B4B1D00404310B8D237+++7347C52" : 0,
+    "E895DC8801E97CC1B9381B4B1D00404310B8D237+++F8FBB7D" : 0,
+    "E895DC8801E97CC1B9381B4B1D00404310B8D237+++9F4A0D0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "31271B39-17BC-4484-AD13-7CD6BA33617E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E895DC8801E97CC1B9381B4B1D00404310B8D237+++7347C52" : "Starlight\/",
+    "E895DC8801E97CC1B9381B4B1D00404310B8D237+++F8FBB7D" : "GameDemo\/",
+    "E895DC8801E97CC1B9381B4B1D00404310B8D237+++9F4A0D0" : "GameDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Starlight",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Starlight.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:flybitsios\/starlight.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E895DC8801E97CC1B9381B4B1D00404310B8D237+++7347C52"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:flybitsios\/starlight.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E895DC8801E97CC1B9381B4B1D00404310B8D237+++9F4A0D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:flybitsios\/gamedemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E895DC8801E97CC1B9381B4B1D00404310B8D237+++F8FBB7D"
+    }
+  ]
+}

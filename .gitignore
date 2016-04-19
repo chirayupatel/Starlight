@@ -1,0 +1,5 @@
+*.pem
+*.cer
+*.p12
+*.certSigningRequest
+.DS_Store
