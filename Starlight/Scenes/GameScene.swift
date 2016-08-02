@@ -214,7 +214,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameUIDelegate {
             }
             print("[ OK ] HKHealthKit was authorized!")
 
-            let _ = ContextManager.sharedManager.registerSDKContextProvider(.HealthKitSteps, priority: .Any, pollFrequency: 5 * 60, uploadFrequency: 5 * 60)
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                let _ = ContextManager.sharedManager.registerSDKContextProvider(.HealthKitSteps, priority: .Any, pollFrequency: 5 * 60, uploadFrequency: 5 * 60)
+            }
         }
         let _ = ContextManager.sharedManager.registerSDKContextProvider(.Network, priority: .Any, pollFrequency: 5 * 60, uploadFrequency: 5 * 60)
         let _ = ContextManager.sharedManager.registerSDKContextProvider(.Carrier, priority: .Any, pollFrequency: 12 * 60 * 60, uploadFrequency: 12 * 60 * 60)
