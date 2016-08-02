@@ -423,7 +423,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameUIDelegate {
     func onContextToggled(contextIndex: Int, selected: Bool) {
         contextRuleSubscriptions[contextIndex] = selected
 
-        if Session.sharedInstance.isConnected {
+        if Session.sharedInstance.status == .Connected {
             let rulePrefix = Constants.contextIndexToRulePrefix(contextIndex)
             let ruleNames = contextRuleNames.filter({ $0.lowercaseString.hasPrefix(rulePrefix) })
             for ruleName in ruleNames {

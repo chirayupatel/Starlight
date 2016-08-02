@@ -41,6 +41,7 @@ class MenuScene: SKScene, MenuUIDelegate {
     }
 
     func connectToFlybits() {
+        Session.sharedInstance.configuration.environment = SessionConfiguration.Environment.Production
         Session.sharedInstance.configuration.APIKey = "<#API Key#>"
 
         print(Session.sharedInstance.configuration.serverURL)
@@ -55,7 +56,7 @@ class MenuScene: SKScene, MenuUIDelegate {
     }
 
     func disconnectFromFlybits() {
-        if Session.sharedInstance.isConnected {
+        if Session.sharedInstance.status == .Connected {
             SessionRequest.Logout { (success, error) -> Void in
                 self.connectionAttempted = false
             }.execute()
