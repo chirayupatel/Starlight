@@ -69,21 +69,16 @@
 		DEE8059D1B99D6E100ACC0BE /* GameOverUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8059C1B99D6E100ACC0BE /* GameOverUI.swift */; };
 		DEE8059F1B9A390900ACC0BE /* SKTexture+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8059E1B9A390900ACC0BE /* SKTexture+Gradient.swift */; };
 		DEE81F261B992F5900F899F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE81F251B992F5900F899F3 /* Constants.swift */; };
-		F238AAE41D50DDB5003393B8 /* FlybitsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F238AAE21D50DDB5003393B8 /* FlybitsSDK.framework */; };
-		F238AAE51D50DDB5003393B8 /* FlybitsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F238AAE21D50DDB5003393B8 /* FlybitsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F238AAE61D50DDB5003393B8 /* MQTTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F238AAE31D50DDB5003393B8 /* MQTTFramework.framework */; };
-		F238AAE71D50DDB5003393B8 /* MQTTFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F238AAE31D50DDB5003393B8 /* MQTTFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F25BB6581D528B5B0020B169 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F25BB6571D528B5B0020B169 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DE98F9461BCED65800A10898 /* Embed Frameworks */ = {
+		F25BB5D91D525AB30020B169 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F238AAE51D50DDB5003393B8 /* FlybitsSDK.framework in Embed Frameworks */,
-				F238AAE71D50DDB5003393B8 /* MQTTFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,8 +151,7 @@
 		DEE8059C1B99D6E100ACC0BE /* GameOverUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverUI.swift; path = UI/GameOverUI.swift; sourceTree = "<group>"; };
 		DEE8059E1B9A390900ACC0BE /* SKTexture+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SKTexture+Gradient.swift"; path = "Extensions/SKTexture+Gradient.swift"; sourceTree = "<group>"; };
 		DEE81F251B992F5900F899F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = General/Constants.swift; sourceTree = "<group>"; };
-		F238AAE21D50DDB5003393B8 /* FlybitsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlybitsSDK.framework; path = Frameworks/FlybitsSDK.framework; sourceTree = "<group>"; };
-		F238AAE31D50DDB5003393B8 /* MQTTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MQTTFramework.framework; path = Frameworks/MQTTFramework.framework; sourceTree = "<group>"; };
+		F25BB6571D528B5B0020B169 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				49837A5A1C6BCD1A00A9D66A /* HealthKit.framework in Frameworks */,
-				F238AAE61D50DDB5003393B8 /* MQTTFramework.framework in Frameworks */,
-				F238AAE41D50DDB5003393B8 /* FlybitsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +185,7 @@
 		DE477D021B8B903B00296DA2 = {
 			isa = PBXGroup;
 			children = (
+				F25BB6571D528B5B0020B169 /* README.md */,
 				DE477D0D1B8B903B00296DA2 /* Starlight */,
 				DEDA2E061B978226007F6E4A /* Frameworks */,
 				DE477D0C1B8B903B00296DA2 /* Products */,
@@ -384,8 +377,6 @@
 		DEDA2E061B978226007F6E4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F238AAE21D50DDB5003393B8 /* FlybitsSDK.framework */,
-				F238AAE31D50DDB5003393B8 /* MQTTFramework.framework */,
 				49837A591C6BCD1A00A9D66A /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -416,7 +407,7 @@
 				DE477D071B8B903B00296DA2 /* Sources */,
 				DE477D081B8B903B00296DA2 /* Frameworks */,
 				DE477D091B8B903B00296DA2 /* Resources */,
-				DE98F9461BCED65800A10898 /* Embed Frameworks */,
+				F25BB5D91D525AB30020B169 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -536,6 +527,7 @@
 				DE1325371B8CA78300BA3DC6 /* ParallaxNode.swift in Sources */,
 				DE98F9281BC8438100A10898 /* EnemyNode.swift in Sources */,
 				DE1325361B8CA78300BA3DC6 /* ParallaxNodeConfig.swift in Sources */,
+				F25BB6581D528B5B0020B169 /* README.md in Sources */,
 				DE55A73F1B9783C5005C9F54 /* MenuUI.swift in Sources */,
 				DE98F92B1BC8438100A10898 /* Updatable.swift in Sources */,
 				DEE8059F1B9A390900ACC0BE /* SKTexture+Gradient.swift in Sources */,
@@ -656,8 +648,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Starlight/Frameworks",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Starlight/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -678,8 +669,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Starlight/Frameworks",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Starlight/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
