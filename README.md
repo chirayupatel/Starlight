@@ -1,14 +1,21 @@
 # Installation Steps:
-  1. Clone the repo: $ git clone https://github.com/flybits/Starlight.git
-  2. Get the latest frameworks from Flybits [img_devportal_1 ]
-    * Navigate to https://developer.flybits.com/ 
-    * Download & extract 'All Architectures [HealthKit]' for the version of Xcode you are running.
+  1. Clone the repo: `$ git clone https://github.com/flybits/Starlight.git`
+  2. Get the latest frameworks from Flybits
+	* Navigate to Dashboard on [Flybits Developer Portal][1]
+    * Download & extract `All Architectures [HealthKit]` for the version of Xcode you are running.
+
+    ![img_dev_portal_1](https://cloud.githubusercontent.com/assets/17835432/17401605/8911778a-5a1c-11e6-8a98-a7986b520921.png)
+
        _NOTE: All architectures includes slices for simulators_
   3. Add all the frameworks downloaded into Starlight project, Embedded Binaries settings
-  4. If you did not select 'Copy items if needed' when performing previous step, you need to add the path where the frameworks are located.
-    4.1 Go to Build Settings -> 'Framework Search Paths'
-    4.2 Edit the Framework Search Path for the Starlight target
-    4.3 Drag and drop the folder where frameworks are located
+  <img width="600" alt="img_xcode_embedded_binaries" src="https://cloud.githubusercontent.com/assets/17835432/17401603/8907d4e6-5a1c-11e6-954b-1f1f96f01f5a.png">
+
+  4. If you did not select `Copy items if needed` when performing previous step, you need to add the path where the frameworks are located.
+    * Go to Build Settings -> 'Framework Search Paths'
+    * Edit the Framework Search Path for the Starlight target
+    * Drag and drop the folder where frameworks are located
+    
+    <img width="600" alt="img_xcode_frame_search_path" src="https://cloud.githubusercontent.com/assets/17835432/17401604/890bfc38-5a1c-11e6-8ca3-4b82de4beac8.png">
     
   That's all steps needed for successfully building and running the project.
 
@@ -17,7 +24,7 @@
 When you build and run, you can follow the guidelines given on the app to play the game. But we need to setup things on Flybits Experience Studio to see the full effect of the game.
 
 Create the following rules in Experience Studio with exact same name.
-```
+
     // Boosts rules
     Name: "Boost: 1"
     Rule: Fitness step count is less than 1000
@@ -34,7 +41,6 @@ Create the following rules in Experience Studio with exact same name.
     Name: "Boost: 5"
     Rule: Fitness step count is greater than 7000    
     
-    
     // Weather rules
     Name: "Weather: Tundra"
     Rule: Current temperature is less than 3˚C
@@ -44,7 +50,10 @@ Create the following rules in Experience Studio with exact same name.
     
     Name: "Weather: Desert"
     Rule: Current temperature is less than 32˚C
-```
+    
+
+After all the rules are created, this is how your Context Rules page should look: 
+![img_experience_studio_context](https://cloud.githubusercontent.com/assets/17835432/17401606/8911fd72-5a1c-11e6-8b23-9eb2865abd84.png)
     
 In this demo, Starlight app occasionally checks for status of each rule and updated the app with appropriate assets. When the rule "Weather: Desert" becomes true because temperature today is more than 32˚C, then that rule becomes activated. The Starlight app changes the background to desert scenario. Similarly, for different weather, the background is changed to reflect the actual current weather condition. 
 
@@ -54,11 +63,10 @@ To activate the rule "Boost: 3", your health data should have step count in the 
 
 If you want the assets to change then one of the weather rule has to become active. We have mapped few different places on Earth where we think the actual temperature is defined by the rules.
 For example, to activate "Weather: Lush" rule, then simulate your device/simulator location to -3.044662 , -59.9671039. Similarly, for all the weather conditions, these are the latitude and longitude to simulate:
-```
-LUSH   => -3.044662,  -59.9671039
-DESERT => 26.6505873,  12.72949
-TUNDRA => 82.5053139, -62.4171657
-```
+
+	LUSH   => -3.044662,  -59.9671039
+	DESERT => 26.6505873,  12.72949
+	TUNDRA => 82.5053139, -62.4171657
 
 #About the game - Starlight#
 Starlight is a 2D side-scroller game that will take a player across many different worlds and pose exciting challenges along the way. Avoid obstacles, enemies and unlock custom ships based on your context and the in-game premium currency.
@@ -142,4 +150,14 @@ func toggleContextChange(rule: FlybitsSDK.Rule) {
     }
 }
 ```
+
+###Screenshots###
+![starlight_gameoverview](https://cloud.githubusercontent.com/assets/17835432/17401599/89073e96-5a1c-11e6-80fd-4ac070022b63.png)
+![starlight_contextintegrationresults](https://cloud.githubusercontent.com/assets/17835432/17401601/890790bc-5a1c-11e6-8c07-af22d8ec68ae.png)
+![starlight_contextintegration](https://cloud.githubusercontent.com/assets/17835432/17401602/8907c62c-5a1c-11e6-9ef0-4d935a90f15c.png)
+![starlight_animationboost](https://cloud.githubusercontent.com/assets/17835432/17401600/89079242-5a1c-11e6-9168-15b6cb9a9e6d.png)
+
+
+[1]: https://developer.flybits.com/ "Flybits Developer Portal"
+
 
